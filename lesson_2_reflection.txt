@@ -16,10 +16,28 @@ change?
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+	when want to test/add something else but not on the main purposes, helps you
+	sharing publicly. (master = public best quality branch, new branch = new 
+	feature branch or experimental branch and not good quality yet)
+	Branch helps multi-route programming, and merging later.
+
 How do the diagrams help you visualize the branch structure?
+
+	to have a clear image of branches in the projects, also helps see if any node
+	is unreachable.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
-What are the pros and cons of Git’s automatic merging vs. always doing merges
-manually?
+	use recursive strategy: compare two branches and their joined point (total comparing
+	3 points), which use (a - o) + (b - o) + o.
+	for logic consistent.
+
+What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+
+	auto merging
+	pros: fast, computer optimized
+	cons: may break the code, or have merge conflicts
+	manually merging
+	pros: don't have merge conflicts, code will work
+	cons: slow, very slow and tidious
